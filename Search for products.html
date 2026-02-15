@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>water - Search Product</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+// ฟังก์ชั่นสำหรับกดปุ่มค้นหา (เบื้องต้น)
+function performSearch(event) {
+    event.preventDefault(); // ป้องกันเว็บรีเฟรช
+    var keyword = document.getElementById('searchInput').value;
+    if(keyword) {
+        alert("คุณกำลังค้นหาคำว่า: " + keyword + "\n(ระบบจะเชื่อมโยงไปหน้าแสดงผลการค้นหา)");
+        // ถ้ามีหน้าแสดงผล ให้แก้บรรทัดล่างเป็น: window.location.href = "search_result.html?q=" + keyword;
+    } else {
+        alert("กรุณาพิมพ์ชื่อสินค้าที่ต้องการค้นหา");
+    }
+}
+</script>
+
+<style>
+/* ตกแต่งกล่องค้นหา */
+.search-container {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* สีพื้นหลังจางๆ */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 60%;
+    margin: 20px auto; /* จัดกึ่งกลางหน้าจอ */
+}
+
+.search-title {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #4a3b2b; /* สีน้ำตาลเข้ม */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-btn {
+    width: 20%;
+    background-color: #8B4513;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #A0522D; /* สีเมื่อเอาเมาส์ชี้ */
+}
+</style>
+</head>
+
+<body background="images.jpeg" onLoad="MM_preloadImages('../../Downloads/Brown Creative Food Youtube Display Ad  (12).png','../../Downloads/Brown Creative Food Youtube Display Ad  (15).png','../../Downloads/Brown Creative Food Youtube Display Ad  (16).png','../../Downloads/Brown Creative Food Youtube Display Ad  (20).png','../../Downloads/Brown Creative Food Youtube Display Ad  (22).png','../../Downloads/Brown Creative Food Youtube Display Ad  (24).png','../../Downloads/Brown Creative Food Youtube Display Ad  (26).png','../../Downloads/Brown Creative Food Youtube Display Ad  (28).png','../../Downloads/Brown Creative Food Youtube Display Ad  (30).png','../../Downloads/Brown Creative Food Youtube Display Ad  (33).png')">
+
+<header>
+  <table width="1300" border="1" align="center"> <tbody>
+      <tr>
+        <th scope="col"><img src="Search_for products1.png" width="938" height="188" alt=""/></th>
+      </tr>
+    </tbody>
+  </table>
+</header>
+
+<nav>
+    <table width="1364" height="60" border="1">
+      <tbody>
+        <tr>
+          <td width="123" height="54"><a href="Home page.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','home2.png',1)"><img src="home1.png" alt="" width="150" height="30" id="Image"></a></td>
+          <td width="123"><a href="product.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','product.png',1)"><img src="productt.png" alt="" width="150" height="30" id="Image2"></a></td>
+          <td width="123"><a href="New products.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','New.png',1)"><img src="New2.png" alt="" width="150" height="30" id="Image3"></a></td>
+          <td width="123"><a href="Contact channels.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Contact channelss.png',1)"><img src="Contact channels.png" alt="" width="150" height="30" id="Image4"></a></td>
+          <td width="123"><a href="Payment channels.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Payment channelss.png',1)"><img src="Payment channels.png" alt="" width="150" height="30" id="Image5"></a></td>
+          <td width="123"><a href="Search for products.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Search for productss.png',1)"><img src="Search_for products.png" alt="" width="150" height="30" id="Image6"></a></td>
+          <td width="123"><a href="Search history.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Search history2.png',1)"><img src="Search history.png" alt="" width="150" height="30" id="Image7"></a></td>
+          <td width="123"><a href="Product price.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Product price2.png',1)"><img src="Product price.png" alt="" width="150" height="30" id="Image8"></a></td>
+          <td width="123"><a href="Serve.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','serve2.png',1)"><img src="serve.png" alt="" width="150" height="30" id="Image9"></a></td>
+        </tr>
+      </tbody>
+    </table>
+</nav>
+
+<table width="1300" border="0" align="center">
+  <tbody>
+    <tr>
+      <td>
+          <div class="search-container">
+            <h2 class="search-title">ค้นหาสินค้าที่คุณต้องการ</h2>
+            <form onsubmit="performSearch(event)">
+                <input type="text" id="searchInput" class="search-box" placeholder="พิมพ์ชื่อสินค้า เช่น น้ำดื่ม">
+                <button type="submit" class="search-btn">ค้นหา</button>
+            </form>
+          </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>Product</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* หัวข้อ */
+h1{
+    text-align:center;
+    padding:20px;
+    background:#ffffff;
+    margin:0;
+    border-bottom:1px solid #ddd;
+}
+
+/* กล่องสินค้า */
+.product-container{
+    width:900px;
+    margin:30px auto;
+}
+
+/* สินค้าแนวตั้ง */
+.product{
+    background:#fff;
+    display:flex;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:200px;
+    height:200px;
+    margin-right:30px;
+}
+
+.product-info{
+    flex:1;
+}
+
+.product-info h3{
+    margin:0;
+}
+
+.price{
+    color:#e74c3c;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* ปุ่มสั่งซื้อ */
+.btn-buy{
+    display:inline-block;
+    background:#27ae60;
+    color:#fff;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:16px;
+}
+.btn-buy:hover{
+    background:#219150;
+}
+
+/* ปุ่มย้อนกลับ */
+.back-home{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    background:#34495e;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:16px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.back-home:hover{
+    background:#2c3e50;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>รายการสินค้า</h1>
+
+<div class="product-container">
+
+    <div class="product"><img src="Annotation 2026-02-06 160636.png" width="436" height="471" alt=""/>
+      <div class="product-info">
+        <h3>น้ำดื่ม 350 มล.</h3>
+            <p>ขวดเล็ก พกพาสะดวก</p>
+            <div class="price">10 บาท</div>
+            <a href="Payment channels.html" class="btn-buy">สั่งซื้อ</a>
+      </div>
+  </div>
+    <div class="product"><img src="59b10bde1b9c908a4-removebg-preview.png" width="500" height="500" alt=""/>
+      <div class="product-info">
+        <h3>น้ำดื่ม 1.5 ลิตร</h3>
+            <p>เหมาะสำหรับครอบครัว</p>
+            <div class="price">25 บาท</div>
+          <a href="Payment channels.html" class="btn-buy">สั่งซื้อ</a>
+      </div>
+  </div>
+
+    <div class="product"><img src="59b10b63e872815ae-removebg-preview.png" width="500" height="500" alt=""/>
+      <div class="product-info">
+        <h3>น้ำดื่มแพ็ค 12 ขวด</h3>
+            <p>คุ้มค่า เหมาะสำหรับออฟฟิศ</p>
+            <div class="price">100 บาท</div>
+          <a href="Payment channels.html" class="btn-buy">สั่งซื้อ</a>
+      </div>
+  </div>
+
+</div>
+
+<!-- ปุ่มย้อนกลับ -->
+<a href="Home page.html" class="back-home">← กลับหน้า Home</a>
+
+</body>
+</html>
+&nbsp;</p>
+</body>
+</html>

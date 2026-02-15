@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>Product</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* หัวข้อ */
+h1{
+    text-align:center;
+    padding:20px;
+    background:#ffffff;
+    margin:0;
+    border-bottom:1px solid #ddd;
+}
+
+/* กล่องสินค้า */
+.product-container{
+    width:900px;
+    margin:30px auto;
+}
+
+/* สินค้าแนวตั้ง */
+.product{
+    background:#fff;
+    display:flex;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product img{
+    width:200px;
+    height:200px;
+    margin-right:30px;
+}
+
+.product-info{
+    flex:1;
+}
+
+.product-info h3{
+    margin:0;
+}
+
+.price{
+    color:#e74c3c;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* ปุ่มสั่งซื้อ */
+.btn-buy{
+    display:inline-block;
+    background:#27ae60;
+    color:#fff;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:16px;
+}
+.btn-buy:hover{
+    background:#219150;
+}
+
+/* ปุ่มย้อนกลับ */
+.back-home{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    background:#34495e;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-size:16px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.back-home:hover{
+    background:#2c3e50;
+}
+</style>
+
+</head>
+
+<body background="images.jpeg">
+
+<h1>รายการสินค้า</h1>
+
+<div class="product-container">
+
+    <div class="product"><img src="Annotation 2026-02-06 160636.png" width="436" height="471" alt=""/>
+      <div class="product-info">
+        <h3>น้ำดื่ม 350 มล.</h3>
+            <p>ขวดเล็ก พกพาสะดวก</p>
+            <div class="price">10 บาท</div>
+            <a href="Payment channels.html" class="btn-buy">สั่งซื้อ</a>
+      </div>
+  </div>
+    <div class="product"><img src="59b10bde1b9c908a4-removebg-preview.png" width="500" height="500" alt=""/>
+      <div class="product-info">
+        <h3>น้ำดื่ม 1.5 ลิตร</h3>
+            <p>เหมาะสำหรับครอบครัว</p>
+            <div class="price">25 บาท</div>
+          <a href="Payment channels.html" class="btn-buy">สั่งซื้อ</a>
+      </div>
+  </div>
+
+    <div class="product"><img src="59b10b63e872815ae-removebg-preview.png" width="500" height="500" alt=""/>
+      <div class="product-info">
+        <h3>น้ำดื่มแพ็ค 12 ขวด</h3>
+            <p>คุ้มค่า เหมาะสำหรับออฟฟิศ</p>
+            <div class="price">100 บาท</div>
+          <a href="Payment channels.html" class="btn-buy">สั่งซื้อ</a>
+      </div>
+  </div>
+
+</div>
+
+<!-- ปุ่มย้อนกลับ -->
+<a href="Home page.html" class="back-home">← กลับหน้า Home</a>
+
+</body>
+</html>

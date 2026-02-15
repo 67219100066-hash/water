@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Payment Channels - ช่องทางการชำระเงิน</title>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<style>
+    /* เพิ่ม CSS เล็กน้อยเพื่อให้แบบฟอร์มสวยงามขึ้น */
+    .payment-box {
+        font-family: sumalee, sans-serif;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.8); /* พื้นหลังสีขาวจางๆ ให้อ่านตัวหนังสือออก */
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+    .bank-info {
+        border: 2px solid #1ba5e3; /* สีฟ้ากรุงไทย */
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+    .input-field {
+        width: 300px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+</style>
+</head>
+
+<body background="images.jpeg" onLoad="MM_preloadImages('../../Downloads/Brown Creative Food Youtube Display Ad  (12).png','../../Downloads/Brown Creative Food Youtube Display Ad  (15).png','../../Downloads/Brown Creative Food Youtube Display Ad  (16).png','../../Downloads/Brown Creative Food Youtube Display Ad  (20).png','../../Downloads/Brown Creative Food Youtube Display Ad  (22).png','../../Downloads/Brown Creative Food Youtube Display Ad  (24).png','../../Downloads/Brown Creative Food Youtube Display Ad  (26).png','../../Downloads/Brown Creative Food Youtube Display Ad  (28).png','../../Downloads/Brown Creative Food Youtube Display Ad  (30).png','../../Downloads/Brown Creative Food Youtube Display Ad  (33).png')">
+<header>
+  <table width="1300" border="1" align="center">
+    <tbody>
+      <tr>
+        <th scope="col"><img src="123456.png" width="938" height="188" alt=""/></th>
+      </tr>
+    </tbody>
+  </table>
+</header>
+
+<nav>
+    <table width="1364" height="60" border="1">
+      <tbody>
+        <tr>
+          <td width="123" height="54"><a href="Home page.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','home2.png',1)"><img src="home1.png" alt="" width="150" height="30" id="Image"></a></td>
+          <td width="123"><a href="product.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','product.png',1)"><img src="productt.png" alt="" width="150" height="30" id="Image2"></a></td>
+          <td width="123"><a href="New products.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','New.png',1)"><img src="New2.png" alt="" width="150" height="30" id="Image3"></a></td>
+          <td width="123"><a href="Contact channels.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Contact channelss.png',1)"><img src="Contact channels.png" alt="" width="150" height="30" id="Image4"></a></td>
+          <td width="123"><a href="Payment channels.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Payment channelss.png',1)"><img src="Payment channels.png" alt="" width="150" height="30" id="Image5"></a></td>
+          <td width="123"><a href="Search for products.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Search for productss.png',1)"><img src="Search_for products.png" alt="" width="150" height="30" id="Image6"></a></td>
+          <td width="123"><a href="Search history.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Search history2.png',1)"><img src="Search history.png" alt="" width="150" height="30" id="Image7"></a></td>
+          <td width="123"><a href="Product price.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','Product price2.png',1)"><img src="Product price.png" alt="" width="150" height="30" id="Image8"></a></td>
+          <td width="123"><a href="Serve.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image11','','serve2.png',1)"><img src="serve.png" alt="" width="150" height="30" id="Image9"></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </nav>
+
+<table width="1300" border="1" align="center" style="background-color: #FFF;">
+  <tbody>
+    <tr>
+      <th align="center" scope="col" valign="top" style="padding: 20px;">
+        
+        <div class="payment-box">
+            <h1>แจ้งชำระเงิน / Payment Methods</h1>
+            <hr>
+
+            <div class="bank-info">
+                <h2 style="color: #1ba5e3;">1. โอนเงินผ่านธนาคาร (Bank Transfer)</h2>
+                <table width="100%" border="0">
+                    <tr>
+                        <td width="150" align="center"><img src="z.jfif" width="300" height="168" alt=""/></td>
+                        <td>
+                            <p style="font-size: 24px;"><b>ธนาคารกรุงไทย (Krungthai Bank)</b></p>
+                            <p>ชื่อบัญชี: <b>[ใส่ชื่อบัญชีของคุณที่นี่]</b></p>
+                            <p>เลขที่บัญชี: <b style="font-size: 28px; color: #000;">111-1-11111-1</b></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="bank-info" style="border-color: #003D78;">
+                <h2>2. สแกนจ่ายผ่าน QR Code</h2>
+                <p>สแกนผ่านแอพธนาคารได้ทุกธนาคาร</p>
+                <center>
+                  <img src="download.png" width="225" height="225" alt=""/>                  <br>
+                    (กรุณาใส่รูป QR Code ของจริงของคุณแทนที่กรอบนี้)
+                </center>
+            </div>
+
+            <div class="bank-info" style="border-color: #ff9800;">
+                <h2 style="color: #ff9800;">3. เก็บเงินปลายทาง (Cash on Delivery)</h2>
+                <p>มีบริการเก็บเงินปลายทาง รอรับสินค้าและชำระเงินหน้าบ้าน</p>
+                <p>*อาจมีค่าธรรมเนียมเพิ่มเติมตามเงื่อนไขขนส่ง</p>
+            </div>
+
+            <br><hr><br>
+
+            <h2>แจ้งยืนยันการโอนเงิน / จัดส่งสินค้า</h2>
+            <form action="#" method="post">
+                <table border="0" align="center">
+                    <tr>
+                        <td align="right">ชื่อ-นามสกุล:</td>
+                        <td><input type="text" name="name" class="input-field" placeholder="ชื่อผู้รับสินค้า"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">เบอร์โทรศัพท์:</td>
+                        <td><input type="text" name="phone" class="input-field" placeholder="เบอร์โทรติดต่อ"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">ที่อยู่จัดส่ง:</td>
+                        <td><textarea name="address" rows="4" class="input-field" placeholder="ที่อยู่โดยละเอียด"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td align="right">วิธีการชำระเงิน:</td>
+                        <td>
+                            <select name="payment_method" class="input-field">
+                                <option value="bank">โอนเงินธนาคารกรุงไทย</option>
+                                <option value="cod">เก็บเงินปลายทาง</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">แนบสลิปโอนเงิน:</td>
+                        <td><input type="file" name="slip"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <br>
+                            <input type="submit" class="submit-btn" formaction="thx.html" formmethod="GET" value="ยืนยันการสั่งซื้อ">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+        </th>
+    </tr>
+  </tbody>
+</table>
+
+<p align="center">&nbsp;</p>
+
+</body>
+</html>
